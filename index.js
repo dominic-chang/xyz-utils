@@ -164,11 +164,11 @@ function fromLuv (vec, result) {
 	return result;
 }
 
-module.exports = XYZUtils = {
-	toRGB: MatrixVectorMultiply.bind(null, XYZtoRGB),
-	fromRGB: MatrixVectorMultiply.bind(null, RGBtoXYZ),
-	toxyY: toxyY,
-	fromxyY: fromxyY,
-	toLuv: toLuv,
-	fromLuv: fromLuv
-};
+var XYZUtils = {
+ 	toRGB: MatrixVectorMultiply.bind(null, XYZtoRGB),
+ 	fromRGB: MatrixVectorMultiply.bind(null, RGBtoXYZ),
+ 	toxyY: toxyY,
+ 	toLuv: toLuv,
+ 	fromLuv: fromLuv
+ };
+module.exports = XYZUtils
